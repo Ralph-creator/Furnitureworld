@@ -1,0 +1,314 @@
+.furniture-world{
+    background: url(../icon/background\ chair\ 2) center/cover no-repeat;
+    text-align: center;
+    padding-top: 85px;
+    padding-top: 195px;
+    padding-bottom: 180px;
+}
+.f-ture{
+    font-family: Roboto, Arial;
+    font-size: 65px;
+    font-weight: 500;
+    color: aliceblue;
+}
+.unique{
+    color: aliceblue;
+}
+.shop-btn{
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: coral;
+}
+.shop-btn:hover{
+    background-color: burlywood;
+    color: black;
+}
+.shp-c{
+    font-family: Roboto, Arial;
+    font-size: 50px;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.handpicked-lounge{
+    background: url(../icon/Handpicked\ bg.webp) center/cover no-repeat;
+    padding-top: 85px;
+    padding-bottom: 180px;
+    padding-left: 50px;
+}
+.discover-btn{
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: rgb(145, 118, 93);
+}
+.discover-btn:hover{
+    color: antiquewhite;
+    background-color: brown;
+}
+.handpicked-txt{
+    /* padding-left: 30px; */
+    font-family: Roboto, Arial;
+    font-size: 45px;
+    color: aliceblue;
+    font-weight: 500;
+}
+.curated-txt{
+    color: aliceblue;
+    font-family: roboto,arial;
+    font-size: 20px;
+}
+.collection-base{
+    display: flex;
+    justify-content: space-evenly;
+}
+.collection-base-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.blue-sofa{
+    width: 700px;
+}
+.sofa-txt{
+    font-family: Roboto, Arial;
+    font-size: 30px;
+}
+.New-txt{
+    font-family: Roboto, Arial;
+    font-size: 50px;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.our-txt{
+    font-family: Roboto, Arial;
+    font-size: 35px;
+    font-weight: 100;
+    padding-left: 30px;
+}
+.arrivals{
+    display: flex;
+    justify-content: space-evenly;
+}
+.double-sofa{
+    width: 450px;
+}
+.price{
+    color: grey;
+    font-size: 22px;
+}
+.cart-btn{
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: rgb(87, 89, 89);
+    background-color: rgb(249, 232, 104);
+}
+.cart-btn:hover{
+    background-color: black;
+    color: bisque;
+}
+.best-sell{
+    display: flex;
+    justify-content: space-evenly;
+}
+.best-sofa{
+    width: 350px;
+}
+.About-us{
+    text-align: center;
+}
+.abt-txt{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    color: black;
+}
+.furniture-wrld-txt{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: 300;
+    color: black;
+}
+.wrld-txt{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+    color: black;
+    font-weight: 100;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    margin-right: 20px;
+    min-width: 60.33%;
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+  
+  
+  .prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+.cspc{
+    overflow: hidden;
+    position: relative;
+}
+.cspc img{
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+.cspc img:hover{
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+
+@media screen and (min-width: 751px) and (max-width: 1000px){
+   .collection-base,
+   .collection-base-2{
+     display: block;
+     padding-left: 40px;
+   }
+}
+  @media screen and (min-width: 751px) and (max-width: 1000px){
+    .arrivals{
+        display: block;
+        padding-left: 40px;
+    }
+}
+  @media screen and (min-width: 751px) and (max-width: 1000px){
+    .best-sell{
+        display: block;
+        padding-left: 40px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 1000px){
+    .cspc{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 1000px){
+  
+}
+@media screen and (min-width: 751px) and (max-width: 1000px){
+  
+}
+
+/* mobile display */
+@media screen and (min-width: 320px) and (max-width: 750px){
+    .collection-base,
+    .collection-base-2{
+      display: block;
+      padding-left: 20px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    .arrivals{
+        display: block;
+        padding-left: 20px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    .best-sell{
+        display: block;
+        padding-left: 20px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    .cspc{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    .blue-sofa{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    .double-sofa{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    
+}
+@media screen and (min-width: 320px) and (max-width: 750px){
+    
+}

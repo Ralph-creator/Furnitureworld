@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../admin/admin-dashboard.css">
+</head>
+<body>
+  <div class="admin-dashboard">
+    <h1>Welcome, Admin</h1>
+
+   
+    <nav>
+      <button onclick="showSection('products')">Manage Products</button>
+      <button onclick="showSection('addProduct')">Add Product</button>
+      <button onclick="showSection('inbox')">Inbox</button>
+      <button onclick="logout()">Logout</button>
+    </nav>
+
+    
+    <section id="products" class="section">
+      <h2>Available Products</h2>
+      <div id="product-list"></div>
+    </section>
+
+    
+    <section id="addProduct" class="section" style="display: none;">
+      <h2>Add New Product</h2>
+      <form id="add-product-form">
+        <input type="text" name="title" placeholder="Product Title" required>
+        <input type="number" name="price" placeholder="Price" required>
+        <input type="file" name="image" required>
+        <button type="submit">Add Product</button>
+        <p id="add-msg"></p>
+      </form>
+    </section>
+
+    
+    <section id="inbox" class="section" style="display: none;">
+      <h2>Contact Messages</h2>
+      <div id="inbox-messages"></div>
+    </section>
+  </div>
+
+  <script src="../admin/admin-dashboard.js"></script>
+</body>
+</html>

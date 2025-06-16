@@ -1,0 +1,134 @@
+/* Ensure the footer is a block-style region */
+.footer {
+    position: relative; /* Ensure it stays in its own flow */
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    color: black;
+    z-index: 10; /* Ensure it stays above other elements */
+    clear: both; /* Prevent floating elements from entering */
+    width: 100%; /* Ensure it spans the full width of the page */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for separation */
+}
+
+.footer logo{
+    flex: 1;
+}
+
+.submit-btn-txt {
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: rgb(126, 83, 9);
+}
+
+.submit-btn-txt:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+.contact-style li {
+    list-style: none;
+}
+
+.Fst-foot li {
+    list-style: none;
+}
+
+.Fst-foot a {
+    text-decoration: none;
+    color: black;
+}
+
+.email-input {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Ensure the footer is always at the bottom of the page */
+.bottom-section {
+    text-align: center;
+    border-top: 1px solid #2d3544;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-bottom-container{
+   padding: 33px 0px 20px;
+}
+.footer-bottom-caption{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.copy-right p{
+    color: #888888;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 12px;
+}
+.copy-right i{
+    color: #61470a;
+}
+.copy-right a{
+    color: #61470a;;
+}
+.copy-right a:hover{
+    color: #fff;
+}
+
+.bottom-section a {
+    pointer-events: none; /* Disable pointer interactions */
+    color: gray; /* Optional: Change the color to indicate it's not clickable */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+.socia-icons align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.socia-icons li{
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Prevent any content from overlapping the footer */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+#main-content {
+    flex: 1; /* Push the footer to the bottom of the page */
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 750px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
