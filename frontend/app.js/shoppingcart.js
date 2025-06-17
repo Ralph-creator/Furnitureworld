@@ -74,9 +74,12 @@ function updateCart() {
         const li = document.createElement('li');
         li.className = 'item';
         li.innerHTML = `
-            ${cartItem.item} - $${cartItem.price} x ${cartItem.quantity} = $${cartItem.totalPrice}
-            <button onclick="incrementItem('${cartItem.item}')">+</button>
-            <button onclick="decrementItem('${cartItem.item}')">-</button>
+            <span>${cartItem.item}</span>
+            <div>
+                <button class="qty-button" onclick="decrementItem('${cartItem.item}')">-</button>
+                <span class="quantity">${cartItem.quantity}</span>
+                <button class="qty-button" onclick="incrementItem('${cartItem.item}')">+</button>
+            </div>
         `;
         cartItems.appendChild(li);
     });

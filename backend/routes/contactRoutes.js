@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const ContactMessage = require('../models/ContactMessage');
 
+// Create a new contact message
 router.post('/', async (req, res) => {
   const { name, email, message } = req.body;
 
@@ -16,6 +17,17 @@ router.post('/', async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Failed to send message.' });
+  }
+});
+
+// ✅ Get all contact messages (for admin inbox)
+router.get('/', async (req, res) => {
+  try {
+    const messages = await ContactMessage.find().sort({ createdAt: -1 });
+    res.status(200).json(messages);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Failed to fetch messages.' });
   }
 });
 
