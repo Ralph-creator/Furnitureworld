@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sofa.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link rel="stylesheet" href="../styles/body.css">
+    <link rel="stylesheet" href="../styles/preloader.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:
+                ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,
+               400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header">
+                <a href="../pages/index.html"><img src="../icon/logo.png" alt="" class="logo"></a>
+                <ul class="nav">
+                    <li><a href="../pages/contact us.html"><h3>Home</h3></a></li>
+                    <li><a href="../pages/sofas.html"><h3>Sofas</h3></a></li>
+                    <li><a href="../pages/lounge chair.html"><h3>Lounge chairs</h3></a></li>
+                    <li><a href="../pages/tables.html"><h3>Tables</h3></a></li>
+                    <li><a href="../pages/chairs.html"><h3>Chairs</h3></a></li>
+                    <li><a href="../pages/contact us.html"><h3>Contact</h3></a></li>
+                
+                </ul>
+            <!-- <div> -->
+                <!-- <i class='far fa-user-circle' style='font-size:26px'></i> -->
+            <!-- </div> -->
+            <!-- <i class="fa fa-shopping-cart" style="font-size:36px"></i> -->
+           <div id="cart">
+            <button id="hide-cart" class="hide-cart-btn">-</button>
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <li class="item">
+                    <span>Product Name</span>
+                    <div>
+                        <button class="qty-button">-</button>
+                        <span class="quantity">1</span>
+                        <button class="qty-button">+</button>
+                    </div>
+                </li>
+            </ul>
+            <div id="total">Total: $0</div>
+            <button id="checkout-button" class="checkout-button">Checkout</button>
+            <button id="cancel" class="cancel-button">Cancel</button>
+        </div>
+            <button class="sidebar-toggle" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <aside class="sidebar">
+                <div class="sidebar-header">
+                  <button class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <nav class="menu-navigation">
+                    <ul>
+                        <li><a href="../pages/index.html">home</a>
+                      </li>
+                      <li><a  href="../pages/sofas.html">Sofas</a>
+                      </li>
+                      <li><a href="../pages/chairs.html">Chairs</a>
+                      </li>
+                      <li><a href="../pages/tables.html">Tables</a>
+                      </li>
+                      <li><a href="../pages/contact us.html">Contact</a>
+                      </li>
+                      </ul>
+                  </nav>
+                  
+                  
+                </aside>
+        </div>
+        </div>
+    </header>
+
+    <div class="sidebar-1">
+        <h2 style="margin-left: 10px;">All Products</h2>
+        <br>
+    
+    
+        <h3 style="color: rgb(85, 83, 81);">Browse by</h3>
+        <br>
+        <br>
+        <br>
+        <ul>
+            <li><a href="#">All products</a></li>
+            <br>
+            <br>
+            <li><a href="../pages/sofas.html">Sofas</a></li>
+            <br>
+            <br>
+            <li><a href="../pages/lounge chair.html">Lounge chairs</a></li>
+            <br>
+            <br>
+            <li><a href="../pages/tables.html">Tables</a></li>
+            <br>
+            <br>
+            <li><a href="../pages/chairs.html">Chairs</a></li>
+        </ul>
+    </div>
+
+    <div id="preloader">
+
+        <div class="preloader-content">
+      
+          <div class="preloader-spinner"></div>
+      
+        </div>
+      
+      </div>
+
+      <div id="main-content">
+
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/Sofas/Ivor1.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Ivor 1</h3>
+            <p class="price">$1000</p>
+            <button class="cart-btn" onclick="addToCart('Ivor 1', 1000)">Add Item  ($1000)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/Sofas/Ivor2.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Ivor 2</h3>
+            <p class="price">$1000</p>
+            <button class="cart-btn"  onclick="addToCart('Ivor 2', 1000)">Add Item  ($1000)</button>
+        </div>
+    
+    </div>
+</body>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/Sofas/Ivor3.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Ivor 3</h3>
+            <p class="price">$1000</p>
+            <button class="cart-btn" onclick="addToCart('Ivor 3', 1000)">Add Item  ($1000)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/Sofas/Modo1.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Modo 1</h3>
+            <p class="price">$1200</p>
+            <button class="cart-btn"  onclick="addToCart('Modo 1', 1200)">Add Item  ($1200)</button>
+        </div>
+   
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/Sofas/Modo2.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Modo 2 </h3>
+            <p class="price">$1200</p>
+            <button class="cart-btn" onclick="addToCart('Modo 2', 1200)">Add Item  ($1200)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/Sofas/Modo3.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Modo 3</h3>
+            <p class="price">$1200</p>
+            <button class="cart-btn"  onclick="addToCart('Modo 3', 1200)">Add Item  ($1200)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/Sofas/Puffer.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Puffer</h3>
+            <p class="price">$1200</p>
+            <button class="cart-btn" onclick="addToCart('Puffer', 1200)">Add Item  ($1200)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/Sofas/Raven1.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Raven 1</h3>
+            <p class="price">$1000</p>
+            <button class="cart-btn"  onclick="addToCart('Raven 1', 1000)">Add Item  ($1000)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div>
+            <img src="../images/Sofas/Raven2.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Raven 2</h3>
+            <p class="price">$1000</p>
+            <button class="cart-btn" onclick="addToCart('Raven 2', 1000)">Add Item  ($1000)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/Sofas/Raven3.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Raven 3</h3>
+            <p class="price">$1000</p>
+            <button class="cart-btn"  onclick="addToCart('Raven 3', 1000)">Add Item  ($1000)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="images/Sofas/Sando.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Sando</h3>
+            <p class="price">$1000</p>
+            <button class="cart-btn" onclick="addToCart('Sando', 1200)">Add Item  ($1000)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/Sofas/Solsti.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">Solsti</h3>
+            <p class="price">$1200</p>
+            <button class="cart-btn" onclick="addToCart('Solsti', 1200)">Add Item  ($1200)</button>
+        </div>
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/lounge chairs/Elara1.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">ELARA 1</h3>
+            <p class="price">$575</p>
+            <button class="cart-btn" onclick="addToCart('Elara 1', 575)">Add Item  ($575)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/lounge chairs/Elara2.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">ELARA 2</h3>
+            <p class="price">$575</p>
+            <button class="cart-btn"  onclick="addToCart('Elara 2', 575)">Add Item  ($575)</button>
+        </div>
+    
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/lounge chairs/Elara3.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">ELARA 3</h3>
+            <p class="price">$575</p>
+            <button class="cart-btn" onclick="addToCart('Elara 3', 575)">Add Item  ($575)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/lounge chairs/Liora.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">LIORA</h3>
+            <p class="price">$540</p>
+            <button class="cart-btn"  onclick="addToCart('Liora', 540)">Add Item  ($540)</button>
+        </div>
+   
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/lounge chairs/Mira couch.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">MIRA</h3>
+            <p class="price">$500</p>
+            <button class="cart-btn" onclick="addToCart('Mira', 500)">Add Item  ($500)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/lounge chairs/Nova1.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">NOVA 1</h3>
+            <p class="price">$500</p>
+            <button class="cart-btn"  onclick="addToCart('Nova 1', 500)">Add Item  ($500)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/lounge chairs/Nova2.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">NOVA 2</h3>
+            <p class="price">$500</p>
+            <button class="cart-btn" onclick="addToCart('Nova 2', 500)">Add Item  ($500)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/lounge chairs/Nova3.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">NOVA 3</h3>
+            <p class="price">$500</p>
+            <button class="cart-btn" onclick="addToCart('Nova 3', 500)">Add Item  ($500)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/lounge chairs/Orion.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">ORION</h3>
+            <p class="price">$600</p>
+            <button class="cart-btn" onclick="addToCart('Orion', 600)">Add Item  ($600)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/lounge chairs/Zephyr.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">ZEPHYR</h3>
+            <p class="price">$540</p>
+            <button class="cart-btn" onclick="addToCart('Zephyr', 540)">Add Item  ($540)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/tables/Axara blue ceramic.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">AXARA 1</h3>
+            <p class="price">$200</p>
+            <button class="cart-btn" onclick="addToCart('Axara 1', 200)">Add Item  ($200)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/tables/Axara 2.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">AXARA 2</h3>
+            <p class="price">$200</p>
+            <button class="cart-btn"  onclick="addToCart('Axara 2', 200)">Add Item  ($200)</button>
+        </div>
+    
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/tables/Axara3.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">AXARA 3</h3>
+            <p class="price">$200</p>
+            <button class="cart-btn" onclick="addToCart('Axara 3', 200)">Add Item  ($200)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/tables/Nyx wooden ceramic mix.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">NYX 1</h3>
+            <p class="price">$175</p>
+            <button class="cart-btn"  onclick="addToCart('Nyx 1', 175)">Add Item  ($175)</button>
+        </div>
+   
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/tables/Nyx2.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">NYX 2</h3>
+            <p class="price">$175</p>
+            <button class="cart-btn" onclick="addToCart('Nyx 2', 175)">Add Item  ($175)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/tables/Nyx3.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">NYX 3</h3>
+            <p class="price">$175</p>
+            <button class="cart-btn"  onclick="addToCart('Nyx 3', 175)">Add Item  ($175)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/tables/tarian wooden style.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">TARIAN</h3>
+            <p class="price">$175</p>
+            <button class="cart-btn" onclick="addToCart('Tarian', 175)">Add Item  ($175)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/tables/Eon black ceramic.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">EON</h3>
+            <p class="price">$200</p>
+            <button class="cart-btn"  onclick="addToCart('Eon', 200)">Add Item  ($200)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/tables/Stellan glass table.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">STELLAN</h3>
+            <p class="price">$175</p>
+            <button class="cart-btn" onclick="addToCart('Stellan', 175)">Add Item  ($175)</button>
+        </div>
+        <div>
+            <img src="../images/tables/ravo table.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">RAVO</h3>
+            <p class="price">$200</p>
+            <button class="cart-btn"  onclick="addToCart('Ravo', 200)">Add Item  ($200)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/chairs/Astra ceramic.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">ASTRA 1 1</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn" onclick="addToCart('Astra 1', 130)">Add Item  ($130)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/chairs/Astra 2.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">ASTRA 2</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn"  onclick="addToCart('Astra 2', 130)">Add Item  ($130)</button>
+        </div>
+    
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/chairs/Astra 3.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">ASTRA 3</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn" onclick="addToCart('Astra 3', 130)">Add Item  ($130)</button>
+        </div>
+        <div class="cspc"> 
+            <img src="../images/chairs/Cresta.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">CRESTA 1</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn"  onclick="addToCart('Cresta 1', 130)">Add Item  ($130)</button>
+        </div>
+   
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/chairs/Cresta 2.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">CRESTA 2</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn" onclick="addToCart('Cresta 2', 130)">Add Item  ($130)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/chairs/Cresta 3.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">CRESTA 3</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn"  onclick="addToCart('Cresta 3', 130)">Add Item  ($130)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/chairs/Fiora aluminium.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">FIORA</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn" onclick="addToCart('Fiora', 130)">Add Item  ($130)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/chairs/Lunara wooden style.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">LUNARA</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn" onclick="addToCart('Lunara', 130)">Add Item  ($130)</button>
+        </div>
+     
+    </div>
+    <div class="arrivals">
+        <div class="cspc">
+            <img src="../images/chairs/Seraph black aluminium.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">SERAPH</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn" onclick="addToCart('Seraph', 130)">Add Item  ($130)</button>
+        </div>
+        <div class="cspc">
+            <img src="../images/chairs/Velara.webp" alt="" class="double-sofa">
+            <h3 class="double-txt">VELARA</h3>
+            <p class="price">$130</p>
+            <button class="cart-btn"  onclick="addToCart('Velara', 130)">Add Item  ($130)</button>
+        </div>
+     
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div>
+                <img src="../icon/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="Fst-foot">
+                <ul>
+                    <li><a href="../pages/sofas.html">Sofas</a></li>
+                    <li><a href="../pages/lounge chair.html">Lounge Chairs</a></li>
+                    <li><a href="../pages/tables.html">Tables</a></li>
+                    <li><a href="../pages/contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="Contact-information">
+                <h2>Contact</h2>
+                <div class="contact-style">
+                    <li>1 Evergreen Street, Oke Ila Ado Ekiti, Nigeria</li>
+                    <li class="ph-o">Tel: +234 9036969953</li>
+                    <li class="ph-o">holyjaf22@gmail.com</li>
+                </div>
+            </div>
+            <div class="News-letter">
+                <div class="Important-link">
+                    <p class="ph-o">New Arrivals Weekly</p>
+                </div>
+                <div>
+                    <p>Receive the latest trends to your inbox</p>
+                    <input type="email" name="email" placeholder="Email address" class="email-input">
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="subscribe">
+                    <label for="subscribe"> Yes, subscribe me to your newsletter.</label>
+                </div>
+                <br>
+                <button type="button" name="submit" class="submit-btn-txt" onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+        <section class="bottom-section">
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-caption">
+                    <div class="copy-right">
+                        <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script>
+             All rights reserved | This template is made with
+             <i class="fa-solid fa-heart"></i>
+             by <a href="#" target="_blank">RalphOtf</a>
+            </p>
+                        </p>
+                    </div>
+                    <ul class="socia-icons align">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-globe"></i></a> 
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        </li>
+                      </ul>  
+                </div>
+    
+            </div>
+        </section> 
+    </footer>
+
+    <button id="backToTop"><i class="fa fa-arrow-up" style="font-size:36px"></i></button>
+
+</div>
+ 
+    <script src="../app.js/shoppingcart.js"></script>
+    <script src="../app.js/preloader.js"></script>
+    <script src="../app.js/footer.js"></script>
+    <script src="../app.js/backtotop.js"></script>
+    <script src="../app.js/header.js"></script>
+    <script src="../app.js/checkout.js"></script>
+</body>
+</html>

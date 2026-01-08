@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture World</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/body.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link rel="stylesheet" href="../styles/preloader.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:
+                ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,
+               400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="../pages/index.html"><img src="../icon/logo.png" alt="" class="logo"></a>
+            <ul class="nav">
+
+                <li><a href="../pages/sofas.html"><h3>Sofas</h3></a></li>
+                <li><a href="../pages/lounge chair.html"><h3>Lounge chairs</h3></a></li>
+                <li><a href="../pages/tables.html"><h3>Tables</h3></a></li>
+                <li><a href="../pages/chairs.html"><h3>Chairs</h3></a></li>
+                <li><a href="../pages/contact us.html"><h3>Contact</h3></a></li>
+            
+            </ul>
+                    <div id="cart">
+            <button id="hide-cart" class="hide-cart-btn">-</button>
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <li class="item">
+                    <span>Product Name</span>
+                    <div>
+                        <button class="qty-button">-</button>
+                        <span class="quantity">1</span>
+                        <button class="qty-button">+</button>
+                    </div>
+                </li>
+            </ul>
+            <div id="total">Total: $0</div>
+            <button id="checkout-button" class="checkout-button">Checkout</button>
+            <button id="cancel" class="cancel-button">Cancel</button>
+        </div>
+
+            <button class="sidebar-toggle" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <aside class="sidebar">
+                <div class="sidebar-header">
+                  <button class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <nav class="menu-navigation">
+                    <ul>
+                        <li><a href="../pages/index.html">home</a>
+                      </li>
+                      <li><a  href="../pages/sofas.html">Sofas</a>
+                      </li>
+                      <li><a href="../pages/chairs.html">Chairs</a>
+                      </li>
+                      <li><a href="../pages/tables.html">Tables</a>
+                      </li>
+                      <li><a href="../pages/contact us.html">Contact</a>
+                      </li>
+                      </ul>
+                  </nav>
+                  
+                  
+                </aside>
+        </div>
+
+    </header>
+
+    <div id="preloader">
+
+        <div class="preloader-content">
+      
+          <div class="preloader-spinner"></div>
+      
+        </div>
+      
+      </div>
+
+<div id="main-content">
+
+       <main>
+        <div class="furniture-world">
+            <h1 class="f-ture">FURNITURE WORLD</h1>
+            <br>
+            <h3 class="unique">UNIQUE DESIGNS FOR DISTINCTIVE SPACES.</h3>
+            <button class="shop-btn">Shop</button>
+        </div>
+       </main>
+       <section>
+        <div class="collections">
+            <h2 class="shp-c">Shop By Collections</h2>
+            <div class="collection-base">
+                <div class="cspc">
+                    <p class="sofa-txt">Sofas</p>
+                    <img src="../icon/blue sofa - bg.webp" alt="" class="blue-sofa">
+                </div>
+                <div class="cspc">
+                    <p class="sofa-txt">Lounge chairs</p>
+                    <img src="../icon/purple chair - bg.webp" alt="" class="blue-sofa">
+                </div>
+            </div>
+            <div class="collection-base-2">
+                <div class="cspc">
+                    <p class="sofa-txt">Chairs</p>
+                    <img src="../icon/wooden chair - bg.webp" alt="" class="blue-sofa">
+                </div>
+                <div class="cspc">
+                    <p class="sofa-txt">Tables</p>
+                    <img src="../icon/glass table - bg.webp" alt="" class="blue-sofa">
+                </div>
+            </div>
+        </div>
+      </section>
+        <br>
+         <br>
+         <br>
+      <section>
+        <div class="handpicked-lounge">
+            <h3 class="handpicked-txt">HANDPICKED LOUNGE CHAIRS</h3>
+            <P class="curated-txt">Curated to perfect every space</P>
+            <a href="../pages/lounge chair.html"><button class="discover-btn">Discover more</button></a>
+
+
+        </div>
+       </section>
+       <section>
+        <div class="New-Arrivals">
+            <h3 class="New-txt">New Arrivals</h3>
+            <div class="arrivals">
+                <div class="cspc">
+                    <img src="../icon/double purple sofa.webp" alt="" class="double-sofa">
+                    <h3 class="double-txt">Double sitter</h3>
+                    <p class="price">$1200</p>
+                    <button class="cart-btn" onclick="addToCart('Double sitter', 1200)">Add Item  ($1200)</button>
+                </div>
+                <div class="cspc">
+                    <img src="../icon/brown wooden table.webp" alt="" class="double-sofa">
+                    <h3 class="double-txt">Center table</h3>
+                    <p class="price">$200</p>
+                    <button class="cart-btn"  onclick="addToCart('Center Table', 200)">Add Item  ($200)</button>
+                </div>
+                <div class="cspc">
+                    <img src="../icon/brown fluffy sofa.webp" alt="" class="double-sofa">
+                    <h3 class="double-txt">Fluffy Sofa</h3>
+                    <p class="price">$500</p>
+                    <button class="cart-btn"  onclick="addToCart('Fluffy Sofa', 500)">Add Item  ($500)</button>
+                </div>
+            </div>
+        </div>
+       </section>
+      <section>
+        <div class="best-sellers">
+            <h3 class="New-txt">BEST SELLERS</h3>
+            <h5 class="our-txt">OUR MOST LOVED ITEMS</h5>
+            <div class="best-sell">
+                <div class="cspc">
+                    <img src="../icon/slime purple sofa.webp" alt="" class="best-sofa">
+                    <h3>Sling Sofa</h3>
+                    <p class="price">$900</p>
+                    <button class="cart-btn" onclick="addToCart('Sling sofa', 900)">Add Item  ($900)</button>
+                </div>
+                <div class="cspc"> 
+                    <img src="../icon/blue stool.webp" alt="" class="best-sofa">
+                    <h3>Blue table</h3>
+                    <p class="price">$200</p>
+                    <button class="cart-btn" onclick="addToCart('Blue table', 200)">Add Item  ($200)</button>
+                </div>
+                <div class="cspc">
+                    <img src="../icon/hard brown table.webp" alt="" class="best-sofa">
+                    <h3>Ceramic table</h3>  
+                    <p class="price">$200</p>
+                    <button class="cart-btn" onclick="addToCart('Ceramic table', 200)">Add Item  ($200)</button>
+                </div>
+                <div class="cspc">
+                    <img src="../icon/grey chair plastic.webp" alt="" class="best-sofa">
+                    <h3>Grey chair</h3>
+                    <p class="price">$100</p>
+                    <button class="cart-btn" onclick="addToCart('Grey chair', 100)">Add Item  ($100)</button>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="About-us">
+            <h1 class="abt-txt">About Us</h1>
+            <h2 class="furniture-wrld-txt">FURNITURE WORLD</h2>
+            <p class="wrld-txt">The home to the most Aestic Home and Office Quality Furnitures </p>
+            <p class="wrld-txt">Just like our motto preceeds, Your Idea is our Fit bringing your imaginations to reality </p>
+        </div>
+        <br>
+        <div class="slider">
+            <div class="slides">
+              <div class="slide">
+                <img src="../images/bleu brown chair.webp" alt="" class="Image-1">
+              </div>
+              <div class="slide">
+                <img src="../images/elara longe chair.webp" alt="" class="Image-1">
+              </div>
+              <div class="slide">
+                <img src="../images/pure glass table.webp" alt="" class="Image-1">
+              </div>
+              <div class="slide">
+                <img src="../images/sando sofa.webp" alt="" class="Image-1">
+              </div>
+              <div class="slide">
+                <img src="../images/background chai1.jfif" alt="" class="Image-1">
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+          </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <footer>
+        <div class="footer">
+            <div>
+                <img src="../icon/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="Fst-foot">
+                <ul>
+                    <li><a href="../pages/sofas.html">Sofas</a></li>
+                    <li><a href="../pages/lounge chair.html">Lounge Chairs</a></li>
+                    <li><a href="../pages/tables.html">Tables</a></li>
+                    <li><a href="../pages/contact us.html">Contact Us</a></li>
+                    <li><a href="../admin/admin-login.html">Admin-Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="Contact-information">
+                <h2>Contact</h2>
+                <div class="contact-style">
+                    <li>1 Evergreen Street, Oke Ila Ado Ekiti, Nigeria</li>
+                    <li class="ph-o">Tel: +234 9036969953</li>
+                    <li class="ph-o">holyjaf22@gmail.com</li>
+                </div>
+            </div>
+            <div class="News-letter">
+                <div class="Important-link">
+                    <p class="ph-o">New Arrivals Weekly</p>
+                </div>
+                <div>
+                    <p>Receive the latest trends to your inbox</p>
+                    <input type="email" name="email" placeholder="Email address" class="email-input">
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="subscribe">
+                    <label for="subscribe"> Yes, subscribe me to your newsletter.</label>
+                </div>
+                <br>
+                <button type="button" name="submit" class="submit-btn-txt" onclick="submitForm()">Submit</button>
+            </div>
+
+             
+        </div>
+        <section class="bottom-section">
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-caption">
+                    <div class="copy-right">
+                        <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script>
+             All rights reserved | This template is made with
+             <i class="fa-solid fa-heart"></i>
+             by <a href="#" target="_blank">RalphOtf</a>
+            </p>
+                        </p>
+                    </div>
+                    <ul class="socia-icons align">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-globe"></i></a> 
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        </li>
+                      </ul>  
+                </div>
+    
+            </div>
+        </section> 
+    </footer>
+
+    <button id="backToTop"><i class="fa fa-arrow-up" style="font-size:36px"></i></button>
+    
+
+</div>
+
+    <script src="../app.js/shoppingcart.js"></script>
+    <script src="../app.js/slider.js"></script>
+    <script src="../app.js/preloader.js"></script>
+    <script src="../app.js/footer.js"></script>
+    <script src="../app.js/backtotop.js"></script>
+    <script src="../app.js/header.js"></script>
+    <script src="../app.js/checkout.js"></script>
+</body>
+</html>
